@@ -1,13 +1,18 @@
 <template>
   <TheHeader></TheHeader>
 
-  <h1 class="bg-danger">Hello</h1>
-
   <main>
 
     <div class="container">
+      <div class="row py-5">
 
-      <ProjectCard v-for="(project, index) in projects" />
+        <div class="col" v-for="project in projects">
+
+          <ProjectCard  :project="project" /> 
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -33,7 +38,9 @@ export default {
     fetchProjects() {
       axios.get(this.backendUrl + "/api/projects").then((resp) => {
 
-        this.projects = resp.data;
+
+        // SE NON FACCIO COSI' HO COME RISPOSTA DATA E IN DATA I RELATIVI PROGETTI
+        this.projects = resp.data.data;
 
         console.log(this.projects);
 
