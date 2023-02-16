@@ -21,8 +21,10 @@
                         <div class="col">
                             <ul class="navbar-nav  mb-2 mb-lg-0 ">
 
-                                <li class="nav-item" v-for="(item, index) in items" :key="index" >
-                                    <a class="nav-link text-white" href="#">{{item.label}}</a>
+                                <li class="nav-item" v-for="(item, index) in items" :key="index">
+                                    <router-link :to="{ name: item.routeName }" class="nav-link">
+                                        {{ item.label }}
+                                    </router-link>
                                 </li>
 
                             </ul>
@@ -35,7 +37,7 @@
             </div>
 
         </nav>
-    </header>
+</header>
 </template>
   
 <script>
@@ -58,7 +60,4 @@ export default {
 };
 </script>
   
-<style scoped lang="scss">
-
-
-</style>
+<style scoped lang="scss"></style>
