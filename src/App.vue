@@ -9,28 +9,14 @@
 import axios from "axios";
 
 import TheHeader from "./components/TheHeader.vue";
-import ProjectCard from "./components/ProjectCard.vue";
 
 export default {
-  components: { TheHeader, ProjectCard },
+  components: { TheHeader},
   data() {
     return {
-      backendUrl: "http://localhost:8000",
-      projects: [],
+
     };
-  },
-  methods: {
-    fetchProjects() {
-      axios.get(this.backendUrl + "/api/projects").then((resp) => {
-
-        this.projects = resp.data.data;
-
-      });
-    }
-  },
-  mounted() {
-    this.fetchProjects();
-  },
+  }
 }
 
 </script>
