@@ -1,22 +1,7 @@
 <template>
   <TheHeader></TheHeader>
 
-  <main>
-
-    <div class="container">
-      <div class="row py-5">
-
-        <div class="col" v-for="project in projects">
-
-          <ProjectCard  :project="project" /> 
-
-        </div>
-
-      </div>
-
-    </div>
-
-</main>
+  <router-view></router-view>
 </template>
 
 
