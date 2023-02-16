@@ -5,7 +5,7 @@
             <div class="container">
 
                 <div class="d-flex">
-                    <a class="navbar-brand text-white" href="#">Michele Abategiovanni</a>
+                    <a class="navbar-brand text-white" href="/">Michele Abategiovanni</a>
                 </div>
 
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
@@ -22,7 +22,7 @@
                             <ul class="navbar-nav  mb-2 mb-lg-0 ">
 
                                 <li class="nav-item" v-for="(item, index) in items" :key="index">
-                                    <router-link :to="{ name: item.routeName }" class="nav-link">
+                                    <router-link :to="{ name: item.routeName }" class="nav-link text-secondary active-link">
                                         {{ item.label }}
                                     </router-link>
                                 </li>

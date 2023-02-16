@@ -1,9 +1,9 @@
 <template>
     <main>
 
-        <!-- <div class="container py-3">
+        <div class="container py-3">
 
-            <h1>PAgina progetti</h1>
+            <h1>Pagina progetti</h1>
 
             <div class="row py-5">
 
@@ -15,9 +15,7 @@
 
             </div>
 
-        </div> -->
-
-        <h1>CIAO PPROGETTI</h1>
+        </div>
 
 </main>
 </template>
