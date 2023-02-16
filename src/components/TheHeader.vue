@@ -5,7 +5,7 @@
             <div class="container">
 
                 <div class="d-flex">
-                    <a class="navbar-brand text-white" href="#">LOGO</a>
+                    <a class="navbar-brand text-white" href="#">Michele Abategiovanni</a>
                 </div>
 
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
