@@ -1,7 +1,7 @@
 <template>
   <TheHeader></TheHeader>
 
-  <router-view></router-view>
+<router-view></router-view>
 </template>
 
 
@@ -23,11 +23,7 @@ export default {
     fetchProjects() {
       axios.get(this.backendUrl + "/api/projects").then((resp) => {
 
-
-        // SE NON FACCIO COSI' HO COME RISPOSTA DATA E IN DATA I RELATIVI PROGETTI
         this.projects = resp.data.data;
-
-        console.log(this.projects);
 
       });
     }
